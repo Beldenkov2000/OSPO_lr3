@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>HTML document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src ="scriptcalc.js"></script>
+    <script src ="script.js"></script>
+    <title>first</title>
+    <style>
+        body{
+            background-color: rgb(100, 64, 15);
+            color: rgb(255, 20, 147);
+        }
+        .Ind4{
+            margin-left: auto;
+            margin-right: auto;
+            border: 20px double rgb(255, 20, 147); /* Параметры границы */
+            background: rgb(255, 205, 54); /* Цвет фона */
+            padding: 10px; /* Поля вокруг текста */
+            width: 900px;
+        }
+    </style>
+<body>
+    <div>
+        <pre><h1 align="center"> Лабораторная ОСПО №3 </h1></pre>
+        <b></b> Индивидуальное задание №1.</b><p></p>
+        <b> Нахождение минимума из двух чисел</b><p></p>
+            <form name="form1">
+                Введите числа:<br><br>
+                X = <input type="text" name="X" size="7">
+                Y = <input type="text" name="Y" size="7">
+                <input type="button" value="Рассчитать" onClick="Min()" /><br><br>
+                Результат = <output type="text" name="x1" size="20">&nbsp;&nbsp;&nbsp;&nbsp; 
+            </form>
+    </div>
+    <div align="center">
+        <br><br>
+        <b> Индивидуальное задание №2. Взаимодействие с пользователем</b><p></p>
+            <form name="form2">
+                <h3>Админ</h3>
+                Admin :
+                <input type="button" value="Вывести деньги на карту" onClick="Check()" /><br><br>
+            </form>
+    </div>
+    <div>
+        <br><br>
+        <b> Индивидуальное задание №3. Уточнение возраста</b><p></p>
+            <form name="form3">
+                <h3>Возраст</h3>
+                <input type="button" value="Ввод" onClick="Age()" /><br><br>
+            </form>
+    </div>
+    <div align="center" class="Ind4">
+        <b> Индивидуальное задание №4. Резюме</b><p></p>
+            <form name="form4">
+                ФИО: БедьденковГригорий Александрович <br>
+                Пол: Мужской <br>
+                Возраст: 21 год <br>
+                <br><br>
+                <input type="button" value="Показать место проживания" onClick="Show()" />
+                <br><br>
+                <img src="02.png" alt="Photo" width="250" height="250">
+                <br><br>
+                <h2 align = "center"> Данные </h2>
+                <p align = "center"> Имя: Григорий </h1></p>
+                Фамилия: <span align = "center" id = "secondname"> Бельденков </span>
+                <br><br>
+                <input type = "text" id="text" placeholder = "Введите фамилию">
+                <input type = "button" value = "Rename" onClick="Rename()" >
+            </form>
+        <script src = "script.js"> </script>
+    </div>
+</body>
+</html>
